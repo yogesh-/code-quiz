@@ -1,17 +1,15 @@
-/* #logo {
-  height: 100px;
-  width: 10rem;
-} 
-*/
+#logo {
+  /* height: 100px; */
+  width: 15rem;
+}
 
-/* .nav {
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: aquamarine;
   width: 100vw;
-  font-size: 1.5rem;
 }
 
 .mob-nav {
@@ -19,6 +17,7 @@
 }
 .margin-nav-items {
   margin: 0 2rem;
+  font-size: 1.5rem;
 }
 
 .h-icon {
@@ -33,7 +32,7 @@
     top: 62px;
     justify-content: center;
     width: 100vw;
-
+    /* margin: 1rem 1rem; */
     background-color: bisque;
   }
 
@@ -51,9 +50,4 @@
   .desktop-nav {
     display: none;
   }
-} */
-
-.example {
-  height: 10rem;
-  width: 600px;
 }

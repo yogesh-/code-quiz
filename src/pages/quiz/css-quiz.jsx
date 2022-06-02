@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "../../components/nav/nav";
-import { CssQuestions } from "../../QuizDB/quizDb";
+// import { CssQuestions } from "../../QuizDB/quizDb";
 
 export const CssQuiz = () => {
   return (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "../../components/nav/nav";
-import { JavaScriptQuestions } from "../../QuizDB/quizDb";
+// import { JavaScriptQuestions } from "../../QuizDB/quizDb";
 
 export const JsQuiz = () => {
   return (

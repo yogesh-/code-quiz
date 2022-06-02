@@ -1,5 +1,4 @@
 #logo {
-  /* height: 100px; */
   width: 15rem;
 }
 
@@ -8,8 +7,9 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: aquamarine;
+  border-bottom: 0.1rem gray solid;
   width: 100vw;
+  height: 6rem;
 }
 
 .mob-nav {
@@ -32,14 +32,15 @@
     top: 62px;
     justify-content: center;
     width: 100vw;
-    /* margin: 1rem 1rem; */
-    background-color: bisque;
+    background-color: gainsboro;
   }
 
   .mob-nav a {
     text-decoration: none;
     text-align: center;
     padding: 0.5rem;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
   }
 
   .h-icon {

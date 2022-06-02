@@ -53,7 +53,58 @@
   }
 } */
 
-.example {
+/* .example {
   height: 10rem;
   width: 600px;
+} */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 6rem);
+}
+
+.content h1 {
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.spin-content {
+  height: 10rem;
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#spin {
+  background: -webkit-linear-gradient(45deg, #d0e90d, #1536f1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#spin::after {
+  content: "";
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    content: "HTML";
+  }
+  30% {
+    content: "CSS";
+  }
+  90% {
+    content: "JAVASCRIPT";
+  }
+}
+
+button {
+  font-size: 2rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
 }

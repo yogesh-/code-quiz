@@ -4,13 +4,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import "./nav.css";
 import IconButton from "@mui/material/IconButton";
-import Brightness4Icon from "@mui/icons-material/Brightness4";
-import Brightness7Icon from "@mui/icons-material/Brightness7";
-// import { useTheme, ThemeProvider, createTheme } from '@mui/material/styles';
+import { MaterialUISwitch } from "../darkmodebtn/darkmodebtn";
 import { useTheme } from "../../context/theme/themecontext";
 
 export const Navbar = () => {
-  const { dark, darkSwitch } = useTheme();
+  const { darkSwitch } = useTheme();
   const [hamburger, setHamburger] = useState(false);
   return (
     <>
@@ -23,8 +21,8 @@ export const Navbar = () => {
           ></img>
           <div className="desktop-nav">
             <button className="login margin-nav-items">Login</button>
-            <IconButton onClick={darkSwitch}>
-              {dark ? <Brightness7Icon /> : <Brightness4Icon />}
+            <IconButton sx={{ fontSize: 80 }} onClick={darkSwitch}>
+              <MaterialUISwitch />
             </IconButton>
           </div>
 
@@ -40,7 +38,9 @@ export const Navbar = () => {
           {hamburger ? (
             <div className="mob-nav">
               <a href="github.com/yogesh-">Login</a>
-              <a href="github.com/yogesh-">Toggle</a>
+              <IconButton sx={{ fontSize: 20 }} onClick={darkSwitch}>
+                <MaterialUISwitch />
+              </IconButton>
             </div>
           ) : (
             ""

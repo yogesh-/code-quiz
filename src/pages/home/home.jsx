@@ -1,18 +1,22 @@
 import React from "react";
 import "./home.css";
-// // import { logo } from "../assets/site-logo.svg";
-// import { useState } from "react";
-// import MenuIcon from "@mui/icons-material/Menu";
-// import CloseIcon from "@mui/icons-material/Close";
 import { Navbar } from "../../components/nav/nav";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
-  // const [hamburger, setHamburger] = useState(false);
   return (
     <>
       <Navbar />
-      <div className="example">
-        <p>dsfvdfvfdgbvfdgbv</p>
+      <div className="content">
+        <h1>Test your skills in</h1>
+        <div className="spin-content">
+          <span id="spin"></span>
+        </div>
+        {/* <Link to="/about">About</Link>
+to: string */}
+        <Link to="/option">
+          <button Link="/option">Start Now</button>
+        </Link>
       </div>
     </>
   );

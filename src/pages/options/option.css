@@ -1,0 +1,43 @@
+.option-main-content {
+  height: calc(100vh - 6rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.lang-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.lang-options p {
+  font-size: 4rem;
+}
+
+.option-main-content .lang-options img:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 780px) {
+  .lang-options p {
+    font-size: 2rem;
+  }
+
+  .lang-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid pink;
+  }
+}

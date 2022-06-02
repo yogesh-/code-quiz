@@ -6,6 +6,7 @@ import "./nav.css";
 import IconButton from "@mui/material/IconButton";
 import { MaterialUISwitch } from "../darkmodebtn/darkmodebtn";
 import { useTheme } from "../../context/theme/themecontext";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const { darkSwitch } = useTheme();
@@ -14,11 +15,13 @@ export const Navbar = () => {
     <>
       <header>
         <div className="nav">
-          <img
-            id="logo"
-            src={require("../../assets/main-logo.png")}
-            alt="logo"
-          ></img>
+          <Link to={"/"}>
+            <img
+              id="logo"
+              src={require("../../assets/main-logo.png")}
+              alt="logo"
+            ></img>
+          </Link>
           <div className="desktop-nav">
             <button className="login margin-nav-items">Login</button>
             <IconButton sx={{ fontSize: 80 }} onClick={darkSwitch}>

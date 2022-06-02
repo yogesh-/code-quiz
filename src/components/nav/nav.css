@@ -1,0 +1,54 @@
+#logo {
+  width: 15rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem gray solid;
+  width: 100vw;
+  height: 6rem;
+}
+
+.mob-nav {
+  display: none;
+}
+.margin-nav-items {
+  margin: 0 2rem;
+  font-size: 1.5rem;
+}
+
+.h-icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mob-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 62px;
+    justify-content: center;
+    width: 100vw;
+    background-color: gainsboro;
+  }
+
+  .mob-nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border-bottom: 1px solid gray;
+  }
+
+  .h-icon {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+}

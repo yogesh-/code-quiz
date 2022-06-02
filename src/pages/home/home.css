@@ -1,0 +1,110 @@
+/* #logo {
+  height: 100px;
+  width: 10rem;
+} 
+*/
+
+/* .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+  width: 100vw;
+  font-size: 1.5rem;
+}
+
+.mob-nav {
+  display: none;
+}
+.margin-nav-items {
+  margin: 0 2rem;
+}
+
+.h-icon {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .mob-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 62px;
+    justify-content: center;
+    width: 100vw;
+
+    background-color: bisque;
+  }
+
+  .mob-nav a {
+    text-decoration: none;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .h-icon {
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+} */
+
+/* .example {
+  height: 10rem;
+  width: 600px;
+} */
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 6rem);
+}
+
+.content h1 {
+  font-size: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.spin-content {
+  height: 10rem;
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#spin {
+  background: -webkit-linear-gradient(45deg, #d0e90d, #1536f1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#spin::after {
+  content: "";
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    content: "HTML";
+  }
+  30% {
+    content: "CSS";
+  }
+  90% {
+    content: "JAVASCRIPT";
+  }
+}
+
+button {
+  font-size: 2rem;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}

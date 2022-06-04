@@ -22,7 +22,6 @@
 
 .question {
   flex: 50%;
-  /* border: 2px solid sandybrown; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,10 +37,10 @@
 .answer {
   display: flex;
   flex: 50%;
-  /* border: 2px solid limegreen; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .answer button:hover {
@@ -77,6 +76,7 @@ li {
     display: flex;
     flex-direction: column;
     width: 25rem;
+    height: auto;
   }
 
   .show-rules {

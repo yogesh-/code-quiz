@@ -111,12 +111,13 @@ export const JavaScriptQuestions = [
     ],
   },
   {
-    question: "How do you write &#34;Hello World&#34; in an alert box?",
+    question:
+      "Which of the following function of Array object adds and/or removes elements from an array?",
     options: [
-      { answerOption: "msg(&#34;Hello World&#34;)", isCorrect: false },
-      { answerOption: "msgBox(&#34;Hello World&#34;);", isCorrect: false },
-      { answerOption: "alert(&#34;Hello World&#34;)", isCorrect: true },
-      { answerOption: "alertBox(&#34;Hello World&#34;)", isCorrect: false },
+      { answerOption: "toSource()", isCorrect: false },
+      { answerOption: "sort()", isCorrect: false },
+      { answerOption: "splice()", isCorrect: true },
+      { answerOption: "unshift()", isCorrect: false },
     ],
   },
   {

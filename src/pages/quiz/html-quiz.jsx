@@ -9,6 +9,7 @@ export const HtmlQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
+  const [rules, setRules] = useState(true);
 
   const questionHandler = (isRight) => {
     if (isRight === true) {
@@ -22,6 +23,11 @@ export const HtmlQuiz = () => {
       setShowScore(true);
     }
   };
+
+  const rulesHandler = () => {
+    setRules(false);
+  };
+
   return (
     <>
       <Navbar />
@@ -35,18 +41,34 @@ export const HtmlQuiz = () => {
             </div>
           ) : (
             <>
-              <div className="question">
-                <p>Question {currentQuestion + 1} of 5</p>
+              {rules ? (
+                <div className="show-rules">
+                  <p>
+                    <ul>
+                      <li>Please do not cheat </li>
+                      <li>Complete the quiz within the time</li>
+                      <li>The quiz will be in english language only </li>
+                      <li>This is not a group quiz, please attempt solo</li>
+                    </ul>
+                  </p>
+                  <button onClick={rulesHandler}>Start Quiz Now</button>
+                </div>
+              ) : (
+                <>
+                  <div className="question">
+                    <p>Question {currentQuestion + 1} of 5</p>
 
-                <p>{questions[currentQuestion].question}</p>
-              </div>
-              <div className="answer">
-                {questions[currentQuestion].options.map((item) => (
-                  <button onClick={() => questionHandler(item.isCorrect)}>
-                    {item.answerOption}
-                  </button>
-                ))}
-              </div>
+                    <p>{questions[currentQuestion].question}</p>
+                  </div>
+                  <div className="answer">
+                    {questions[currentQuestion].options.map((item) => (
+                      <button onClick={() => questionHandler(item.isCorrect)}>
+                        {item.answerOption}
+                      </button>
+                    ))}
+                  </div>
+                </>
+              )}
             </>
           )}
         </div>

@@ -1,11 +1,13 @@
 import React from "react";
 import "./result.css";
 import { Navbar } from "../../components/nav/nav";
-import { useResult } from "../../context/resultContext/resultContext";
+// use it for P1,P2
+// import { useResult } from "../../context/resultContext/resultContext";
 import { CssQuestions } from "../../QuizDB/quizDb";
 
 export const CssResult = () => {
-  const { resultState } = useResult();
+  // for use in P1,P2
+  // const { resultState } = useResult();
 
   const bg = (item) => {
     if (item.isCorrect === true) {

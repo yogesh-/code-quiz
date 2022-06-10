@@ -3,6 +3,7 @@ import { Navbar } from "../../components/nav/nav";
 import { CssQuestions } from "../../QuizDB/quizDb";
 import { useState } from "react";
 import "./quiz.css";
+import { Link } from "react-router-dom";
 
 export const CssQuiz = () => {
   const questions = CssQuestions;
@@ -37,6 +38,9 @@ export const CssQuiz = () => {
             <div className="show-score">
               {" "}
               <p>You scored {score} out of 5</p>
+              <Link to="/css-result">
+                <button>Check Correct Answers</button>
+              </Link>
             </div>
           ) : (
             <>

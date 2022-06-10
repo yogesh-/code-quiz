@@ -7,6 +7,9 @@ import { useTheme } from "./context/theme/themecontext";
 import { CssQuiz } from "./pages/quiz/css-quiz";
 import { HtmlQuiz } from "./pages/quiz/html-quiz";
 import { JsQuiz } from "./pages/quiz/js-quiz";
+import { HtmlResult } from "./pages/result/htmlResult.jsx";
+import { CssResult } from "./pages/result/cssResult.jsx";
+import { JsResult } from "./pages/result/jsResult.jsx";
 
 function App() {
   const { dark } = useTheme();
@@ -19,6 +22,9 @@ function App() {
           <Route path="/css-quiz" element={<CssQuiz />} />
           <Route path="/html-quiz" element={<HtmlQuiz />} />
           <Route path="/js-quiz" element={<JsQuiz />} />
+          <Route path="/html-result" element={<HtmlResult />} />
+          <Route path="/css-result" element={<CssResult />} />
+          <Route path="/js-result" element={<JsResult />} />
         </Route>
       </Routes>
     </div>
